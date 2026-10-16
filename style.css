@@ -1,7 +1,7 @@
 /* ============================================
    Class Information Webpage - CSS Stylesheet
    Budge Budge Institute of Technology
-   Modern & Polished Design
+   Clean White Theme
    ============================================ */
 
 /* ---------- Google Font Import ---------- */
@@ -20,9 +20,8 @@ html {
 
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #0a1628 0%, #0d2137 25%, #132e4a 50%, #0a1f3d 75%, #071224 100%);
-    background-attachment: fixed;
-    color: #c9d6e8;
+    background-color: #f5f7fa;
+    color: #2d3748;
     line-height: 1.8;
     min-height: 100vh;
 }
@@ -37,20 +36,19 @@ body {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #0a1628;
+    background: #e2e8f0;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #1a4a7a, #0d2a4a);
+    background: linear-gradient(180deg, #2b6cb0, #1a365d);
     border-radius: 5px;
 }
 
 /* ---------- Header ---------- */
 header {
-    background: linear-gradient(135deg, #020b18, #0a1e3d, #0f2d50, #0a1e3d);
+    background: linear-gradient(135deg, #1a365d, #2b6cb0, #2c5282);
     color: white;
     padding: 45px 40px;
     text-align: center;
-    border-bottom: none;
     position: relative;
     overflow: hidden;
 }
@@ -62,8 +60,8 @@ header::before {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 30% 70%, rgba(43,108,176,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(229,62,62,0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(229,62,62,0.08) 0%, transparent 50%);
     animation: headerGlow 8s ease-in-out infinite alternate;
 }
 
@@ -110,7 +108,7 @@ header::before {
 
 .subtitle {
     font-size: 1.2em;
-    color: #90cdf4;
+    color: #bee3f8;
     font-weight: 300;
 }
 
@@ -130,15 +128,14 @@ header::before {
 
 /* ---------- Navigation ---------- */
 nav {
-    background: rgba(5, 15, 35, 0.95);
+    background: #1a202c;
     backdrop-filter: blur(12px);
     padding: 14px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(43,108,176,0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
@@ -186,16 +183,15 @@ main {
 
 /* ---------- Section Common ---------- */
 .section {
-    background: rgba(10, 22, 45, 0.85);
+    background: white;
     margin: 30px 0;
     padding: 35px 40px;
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-    border-left: 5px solid #1e5faa;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #2b6cb0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(43,108,176,0.15);
 }
 
 .section::before {
@@ -205,23 +201,23 @@ main {
     right: 0;
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(30,95,170,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(43,108,176,0.04) 0%, transparent 70%);
     border-radius: 50%;
     transform: translate(50%, -50%);
 }
 
 .section:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.9em;
-    color: #6db3f2;
+    color: #1a365d;
     margin-bottom: 22px;
     padding-bottom: 12px;
-    border-bottom: 3px solid rgba(43,108,176,0.2);
+    border-bottom: 3px solid #e2e8f0;
     position: relative;
 }
 
@@ -238,7 +234,7 @@ main {
 
 .section h3 {
     font-size: 1.25em;
-    color: #5a9fd4;
+    color: #2b6cb0;
     margin: 25px 0 12px 0;
     font-weight: 600;
     display: flex;
@@ -257,21 +253,21 @@ main {
     margin-bottom: 16px;
     text-align: justify;
     font-size: 1.02em;
-    color: #a0b4cc;
+    color: #4a5568;
 }
 
 .about-content a {
-    color: #5a9fd4;
+    color: #2b6cb0;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid rgba(90,159,212,0.3);
+    border-bottom: 2px solid rgba(43,108,176,0.2);
     transition: all 0.3s ease;
     padding-bottom: 1px;
 }
 
 .about-content a:hover {
-    color: #fbd38d;
-    border-bottom-color: #fbd38d;
+    color: #e53e3e;
+    border-bottom-color: #e53e3e;
 }
 
 /* ---------- Tables ---------- */
@@ -283,12 +279,12 @@ table {
     font-size: 0.92em;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 thead {
-    background: linear-gradient(135deg, #0a1e3d, #1a4a7a);
-    color: #90cdf4;
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    color: white;
 }
 
 th {
@@ -302,8 +298,8 @@ th {
 
 td {
     padding: 12px;
-    border-bottom: 1px solid rgba(43,108,176,0.12);
-    color: #b0c4de;
+    border-bottom: 1px solid #edf2f7;
+    color: #4a5568;
 }
 
 tbody tr {
@@ -311,7 +307,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-    background-color: rgba(30,95,170,0.15);
+    background-color: #ebf8ff;
     transform: scale(1.005);
 }
 
@@ -320,24 +316,25 @@ tbody tr:last-child td {
 }
 
 .lab-row {
-    background-color: rgba(10,30,61,0.4);
+    background-color: #f7fafc;
     font-style: italic;
-    color: #7a9ab8;
+    color: #718096;
 }
 
 .lab-row:hover {
-    background-color: rgba(30,95,170,0.2) !important;
+    background-color: #e6fffa !important;
 }
 
 .total-row {
-    background: linear-gradient(135deg, #0d2a4a, #1a4a7a);
-    color: #fbd38d;
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    color: white;
     font-weight: bold;
 }
 
 .total-row td {
     border-bottom: none;
     padding: 14px 12px;
+    color: white;
 }
 
 /* ---------- Lists Section ---------- */
@@ -350,11 +347,11 @@ tbody tr:last-child td {
 .list-box {
     flex: 1;
     min-width: 280px;
-    background: linear-gradient(145deg, rgba(10,22,45,0.6), rgba(15,30,55,0.8));
+    background: linear-gradient(145deg, #f7fafc, #edf2f7);
     padding: 24px 28px;
     border-radius: 12px;
-    border: 1px solid rgba(43,108,176,0.2);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     transition: transform 0.3s ease;
 }
 
@@ -372,8 +369,8 @@ tbody tr:last-child td {
 
 .list-box li {
     padding: 8px 0;
-    color: #a0b4cc;
-    border-bottom: 1px dashed rgba(43,108,176,0.15);
+    color: #4a5568;
+    border-bottom: 1px dashed #e2e8f0;
     transition: padding-left 0.3s ease;
 }
 
@@ -383,7 +380,7 @@ tbody tr:last-child td {
 
 .list-box li:hover {
     padding-left: 8px;
-    color: #6db3f2;
+    color: #1a365d;
 }
 
 .list-box ol li::marker {
@@ -406,12 +403,11 @@ tbody tr:last-child td {
 .gallery-item {
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    background: rgba(10,22,45,0.7);
+    background: white;
     cursor: pointer;
     position: relative;
-    border: 1px solid rgba(43,108,176,0.15);
 }
 
 .gallery-item::after {
@@ -426,7 +422,7 @@ tbody tr:last-child td {
 
 .gallery-item:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 16px 40px rgba(30,95,170,0.3);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
 .gallery-item:hover::after {
@@ -449,21 +445,21 @@ tbody tr:last-child td {
     padding: 12px 14px;
     text-align: center;
     font-weight: 600;
-    color: #90cdf4;
+    color: #2d3748;
     font-size: 0.93em;
     position: relative;
     z-index: 1;
-    background: rgba(10,22,45,0.9);
+    background: white;
 }
 
 /* ---------- Form ---------- */
 .form-container {
     max-width: 620px;
     margin: 0 auto;
-    background: linear-gradient(145deg, rgba(10,22,45,0.6), rgba(15,30,55,0.8));
+    background: linear-gradient(145deg, #f7fafc, #edf2f7);
     padding: 35px;
     border-radius: 14px;
-    border: 1px solid rgba(43,108,176,0.2);
+    border: 1px solid #e2e8f0;
 }
 
 .form-group {
@@ -474,7 +470,7 @@ tbody tr:last-child td {
     display: block;
     margin-bottom: 7px;
     font-weight: 600;
-    color: #90cdf4;
+    color: #1a365d;
     font-size: 0.95em;
 }
 
@@ -483,27 +479,26 @@ tbody tr:last-child td {
 .form-group textarea {
     width: 100%;
     padding: 12px 16px;
-    border: 2px solid rgba(43,108,176,0.3);
+    border: 2px solid #cbd5e0;
     border-radius: 10px;
     font-size: 0.98em;
     font-family: inherit;
     transition: all 0.3s ease;
-    background: rgba(7,18,36,0.7);
-    color: #c9d6e8;
+    background: white;
+    color: #2d3748;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #5a9fd4;
-    box-shadow: 0 0 0 4px rgba(90,159,212,0.15);
-    background: rgba(10,25,50,0.9);
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 4px rgba(43,108,176,0.12);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #5a7a98;
+    color: #a0aec0;
 }
 
 .form-buttons {
@@ -527,14 +522,14 @@ tbody tr:last-child td {
 }
 
 .btn-submit {
-    background: linear-gradient(135deg, #1a4a7a, #2b6cb0);
+    background: linear-gradient(135deg, #2b6cb0, #1a365d);
     color: white;
-    box-shadow: 0 4px 15px rgba(26,74,122,0.4);
+    box-shadow: 0 4px 15px rgba(43,108,176,0.3);
 }
 
 .btn-submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(43,108,176,0.5);
+    box-shadow: 0 6px 20px rgba(43,108,176,0.45);
 }
 
 .btn-reset {
@@ -552,8 +547,8 @@ tbody tr:last-child td {
 .map-container {
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
-    border: 3px solid rgba(43,108,176,0.25);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid #e2e8f0;
 }
 
 .map-container iframe {
@@ -562,8 +557,8 @@ tbody tr:last-child td {
 
 /* ---------- Footer ---------- */
 footer {
-    background: linear-gradient(135deg, #020b18, #0a1e3d, #071224);
-    color: #8aa4c0;
+    background: linear-gradient(135deg, #1a365d, #2c5282, #1a365d);
+    color: #cbd5e0;
     text-align: center;
     padding: 35px 20px;
     margin-top: 35px;
